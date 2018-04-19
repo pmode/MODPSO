@@ -2,7 +2,7 @@
 using namespace std;
 
 int main()
-{
+{//123
 	FILE* fp,*fpout;
 	fp = fopen("network-500node.dat", "r");
 	fpout = fopen("test-500.txt", "w+");
