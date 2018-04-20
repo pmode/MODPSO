@@ -416,32 +416,32 @@ double calcQ(vector<int> pos)
 
 	if (SignedFlag == 0)
 	{
-		if(!strcmp(strReal,"RealWorld\\FB50.txt")) R = FB50_QR;
-		if(!strcmp(strReal,"RealWorld\\karate.txt")) R = karate_QR;
-		if(!strcmp(strReal,"RealWorld\\dolphin.txt")) R = dolphin_QR;
-		if(!strcmp(strReal,"RealWorld\\SFI.txt")) R = SFI_QR;
-		if(!strcmp(strReal,"RealWorld\\football.txt")) R = football_QR;
-		if(!strcmp(strReal,"RealWorld\\netscience.txt")) R = netscience_QR;
-		if(!strcmp(strReal,"RealWorld\\netscience_remove.txt")) R = netscience_remove_QR;
-		if(!strcmp(strReal,"RealWorld\\power.txt")) R = power_QR;
-		if(!strcmp(strReal,"RealWorld\\power_remove.txt")) R = power_remove_QR;
-		if(!strcmp(strReal,"RealWorld\\hepth_adj.txt")) R = hepth_QR;	
-		if(!strcmp(strReal,"RealWorld\\PGP_adj.txt")) R = PGP_QR;
-		if(!strcmp(strReal,"RealWorld\\G.txt")) R = MIDV30_QR;
-		if(!strcmp(strReal,"RealWorld\\MID3.0_remove.txt")) R = MIDV30_remove_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\FB50.txt")) R = FB50_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\karate.txt")) R = karate_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\dolphin.txt")) R = dolphin_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\SFI.txt")) R = SFI_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\football.txt")) R = football_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\netscience.txt")) R = netscience_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\netscience_remove.txt")) R = netscience_remove_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\power.txt")) R = power_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\power_remove.txt")) R = power_remove_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\hepth_adj.txt")) R = hepth_QR;	
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\PGP_adj.txt")) R = PGP_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\G.txt")) R = MIDV30_QR;
+		if(!strcmp(strReal,"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\MID3.0_remove.txt")) R = MIDV30_remove_QR;
 
 
-		if(!strcmp(strlabel , "GNExtend\\real0.0.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.1.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.15.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.2.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.25.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.3.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.35.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.4.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.45.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.5.txt")) R = 1.0/(2*1024);
-		if(!strcmp(strlabel , "GNExtend\\real0.05.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.0.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.1.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.15.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.2.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.25.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.3.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.35.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.4.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.45.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.5.txt")) R = 1.0/(2*1024);
+		if(!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.05.txt")) R = 1.0/(2*1024);
 
 		
 		double Q = 0;
@@ -643,45 +643,45 @@ void heuristic_initial(vector<int> gene,network* node)
 
 bool check_label()
 {
-	if (!strcmp(strlabel , "RealWorld\\new1000-6label.txt") || 
-		!strcmp(strlabel , "RealWorld\\real_label_FB50.txt") ||
-		!strcmp(strlabel , "RealWorld\\real_label_25_point.txt") ||
-		!strcmp(strlabel , "RealWorld\\real_label_125_point.txt") ||
-		!strcmp(strlabel , "RealWorld\\real_label_karate.txt") ||
-		!strcmp(strlabel , "RealWorld\\real_label_dolphin.txt") ||
-		!strcmp(strlabel , "RealWorld\\real_label_football.txt") ||
-		!strcmp(strlabel , "RealWorld\\real_label_polbook.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.0.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.1.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.15.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.2.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.25.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.3.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.35.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.4.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.45.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.5.txt") ||
-		!strcmp(strlabel , "GNExtend\\real0.05.txt") ||
-		!strcmp(strlabel , "RealWorld\\sloeven1label.txt") ||
-		!strcmp(strlabel , "RealWorld\\gahuku2label.txt") ||
-		!strcmp(strlabel , "RealWorld\\datalabel.txt")||
-		!strcmp(strlabel , "LFR\\0.00.CLU")||
-		!strcmp(strlabel , "LFR\\0.05.CLU")||
-		!strcmp(strlabel , "LFR\\0.10.CLU")||
-		!strcmp(strlabel , "LFR\\0.15.CLU")||
-		!strcmp(strlabel , "LFR\\0.20.CLU")||
-		!strcmp(strlabel , "LFR\\0.25.CLU")||
-		!strcmp(strlabel , "LFR\\0.30.CLU")||
-		!strcmp(strlabel , "LFR\\0.35.CLU")||
-		!strcmp(strlabel , "LFR\\0.40.CLU")||
-		!strcmp(strlabel , "LFR\\0.45.CLU")||
-		!strcmp(strlabel , "LFR\\0.50.CLU")||
-		!strcmp(strlabel , "LFR\\0.55.CLU")||
-		!strcmp(strlabel , "LFR\\0.60.CLU")||
-		!strcmp(strlabel , "LFR\\0.65.CLU")||
-		!strcmp(strlabel , "LFR\\0.70.CLU")||
-		!strcmp(strlabel , "LFR\\0.75.CLU")||
-		!strcmp(strlabel , "LFR\\0.80.CLU"))
+	if (!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\new1000-6label.txt") || 
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_FB50.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_25_point.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_125_point.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_karate.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_dolphin.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_football.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_polbook.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.0.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.1.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.15.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.2.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.25.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.3.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.35.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.4.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.45.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.5.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.05.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\sloeven1label.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\gahuku2label.txt") ||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\datalabel.txt")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.00.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.05.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.10.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.15.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.20.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.25.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.30.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.35.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.40.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.45.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.50.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.55.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.60.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.65.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.70.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.75.CLU")||
+		!strcmp(strlabel , "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.80.CLU"))
 		return true;
 	else return false;
 }

@@ -220,7 +220,7 @@ void TMOEAD::compute_velocity(int index, TIndividual &child, int gen) /* Compute
 
 void TMOEAD::update_pbests(int index) /* Update personal bests of particles in the population */
 {
-	unsigned int j, sum, better, counter;
+	unsigned int j, sum, better=0, counter;
 	
 	sum = 0; counter = 0;
 

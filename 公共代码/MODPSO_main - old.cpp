@@ -16,96 +16,78 @@ void main()
 	numObjectives = 2;
 	int runtimes = rn;
 
-/*-----------------------------GN benchmark networks--------------*/
-  char *BenchmarkData[] = {   "out0.txt",		    "out1.txt",\
-							  "out2.txt",			"out3.txt",\
-							  "out4.txt",			"out5.txt",\
-							  "out6.txt",			"out7.txt",\
-							  "out8.txt"};
-
-/*-------------real labels of GN benchmark networks------*/
-  
-  char *BenchmarkDataLabel[] ={"real_label_out0.txt",\
-							  "real_label_out1.txt",\
-							  "real_label_out2.txt",\
-							  "real_label_out3.txt",\
-							  "real_label_out4.txt",\
-							  "real_label_out5.txt",\
-							  "real_label_out6.txt",\
-							  "real_label_out7.txt",\
-							  "real_label_out8.txt" };
 
 /*-------------------GN extended benchmark networks-----------------*/
   
-  char *ExtentionData[] = {"GNExtend\\0.0.txt", "GNExtend\\0.05.txt",	"GNExtend\\0.1.txt",\
-						  "GNExtend\\0.15.txt",	"GNExtend\\0.2.txt",\
-						  "GNExtend\\0.25.txt",	"GNExtend\\0.3.txt",\
-						  "GNExtend\\0.35.txt",	"GNExtend\\0.4.txt",\
-						  "GNExtend\\0.45.txt", "GNExtend\\0.5.txt" };
+  char *ExtentionData[] = {"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.0.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.05.txt",	"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.1.txt",\
+						  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.15.txt",	"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.2.txt",\
+						  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.25.txt",	"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.3.txt",\
+						  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.35.txt",	"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.4.txt",\
+						  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.45.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\0.5.txt" };
 
 /*--------------------labels of GN extended benchmark networks---------------------*/
-  char *ExtentionDataLabel[] ={"GNExtend\\real0.0.txt",  "GNExtend\\real0.05.txt",  "GNExtend\\real0.1.txt",\
-							  "GNExtend\\real0.15.txt",	 "GNExtend\\real0.2.txt",\
-							  "GNExtend\\real0.25.txt",	 "GNExtend\\real0.3.txt",\
-							  "GNExtend\\real0.35.txt",	 "GNExtend\\real0.4.txt",\
-							  "GNExtend\\real0.45.txt",  "GNExtend\\real0.5.txt" };
+  char *ExtentionDataLabel[] ={"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.0.txt",  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.05.txt",  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.1.txt",\
+							  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.15.txt",	 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.2.txt",\
+							  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.25.txt",	 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.3.txt",\
+							  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.35.txt",	 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.4.txt",\
+							  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.45.txt",  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\GNExtend\\real0.5.txt" };
 
 /*----------------------------unsigned real-world networks----------------------*/
-  char *RealData[] = {  "RealWorld\\dFB50.txt",			"RealWorld\\25_point.txt",\
-						"RealWorld\\125_point.txt",		"RealWorld\\karate.txt",\
-						"RealWorld\\dolphin.txt",		"RealWorld\\football.txt",\
-						"RealWorld\\polbook.txt",		"RealWorld\\celegansneural.txt",\
-						"RealWorld\\SFI.txt",			"RealWorld\\netscience.txt",\
-						"RealWorld\\netscience_remove.txt",	"RealWorld\\power.txt",\
-						"RealWorld\\power_remove.txt",   "RealWorld\\email.txt",\
-						"RealWorld\\hepth_adj.txt",  "E:\\我搞定的程序\\SI\\DPSOCD\\PGP_adj.txt"};
+  char *RealData[] = {  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\dFB50.txt",			"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\25_point.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\125_point.txt",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\karate.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\dolphin.txt",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\football.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\polbook.txt",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\celegansneural.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\SFI.txt",			"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\netscience.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\netscience_remove.txt",	"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\power.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\power_remove.txt",   "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\email.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\hepth_adj.txt",  "E:\\我搞定的程序\\SI\\DPSOCD\\PGP_adj.txt"};
 
 /*---------------------nos. of nodes of the corresponding unsigned networks-------------------------*/
   int  nvars[]       = {50, 25, 125, 34, 62, 115, 105, 0, 118, 1589, 1461, 4941, 4941, 0, 8361, 10680};
  
 /*-----real labels of the unsigned real-world networks----------*/
-  char *RealDataLabel[] ={  "RealWorld\\real_label_FB50.txt",\
-							"RealWorld\\real_label_25_point.txt",\
-							"RealWorld\\real_label_125_point.txt",\
-							"RealWorld\\real_label_karate.txt",\
-							"RealWorld\\real_label_dolphin.txt",\
-							"RealWorld\\real_label_football.txt",\
-							"RealWorld\\real_label_polbook.txt",\
-							"RealWorld\\celegansneural_label.txt"};
+  char *RealDataLabel[] ={  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_FB50.txt",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_25_point.txt",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_125_point.txt",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_karate.txt",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_dolphin.txt",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_football.txt",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\real_label_polbook.txt",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\celegansneural_label.txt"};
 
 /*----------------------------------signed real-world and artificial networks--------------------*/
-	char *SignedData[] = {   "RealWorld\\slovene1.txt",  "RealWorld\\gahuku2.txt",\
-							 "RealWorld\\data1.txt",	 "RealWorld\\data.txt",\
-							 "RealWorld\\matrixfull.txt","RealWorld\\matrixfull_remove.txt",\
-							 "RealWorld\\matrixfull_remove_remove.txt",\
-							 "RealWorld\\GFull_remove_remove_remove.txt",\
-							 "RealWorld\\new1000-6.txt",\
+	char *SignedData[] = {   "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\slovene1.txt",  "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\gahuku2.txt",\
+							 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\data1.txt",	 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\data.txt",\
+							 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\matrixfull.txt","E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\matrixfull_remove.txt",\
+							 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\matrixfull_remove_remove.txt",\
+							 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\GFull_remove_remove_remove.txt",\
+							 "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\RealWorld\\new1000-6.txt",\
 							 "EGFR.txt",       "Macrophage.txt",\
 							 "yeast.txt",      "ecoli.txt",\
 							 "wiki.txt"};
 
 
 /*----------------------------------the LFR benchmark networks------------------------------*/
-	char *LFRData[] = { "LFR\\0.00.txt", "LFR\\0.05.txt",\
-						"LFR\\0.10.txt", "LFR\\0.15.txt",\
-						"LFR\\0.20.txt", "LFR\\0.25.txt",\
-						"LFR\\0.30.txt", "LFR\\0.35.txt",
-						"LFR\\0.40.txt", "LFR\\0.45.txt",\
-						"LFR\\0.50.txt", "LFR\\0.55.txt",\
-						"LFR\\0.60.txt", "LFR\\0.65.txt",\
-						"LFR\\0.70.txt", "LFR\\0.75.txt",\
-						"LFR\\0.80.txt"};
+	char *LFRData[] = { "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.00.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.05.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.10.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.15.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.20.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.25.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.30.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.35.txt",
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.40.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.45.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.50.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.55.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.60.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.65.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.70.txt", "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.75.txt",\
+						"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.80.txt"};
 	
 /*-----------------------the real labels of the LFR benchmark networks-------------------------*/
-	char *LFRDataLabel[] ={ "LFR\\0.00.CLU", 	"LFR\\0.05.CLU",\
-							"LFR\\0.10.CLU",		"LFR\\0.15.CLU",\
-							"LFR\\0.20.CLU",		"LFR\\0.25.CLU",\
-							"LFR\\0.30.CLU",		"LFR\\0.35.CLU",
-							"LFR\\0.40.CLU",		"LFR\\0.45.CLU",\
-							"LFR\\0.50.CLU",		"LFR\\0.55.CLU",\
-							"LFR\\0.60.CLU",		"LFR\\0.65.CLU",\
-							"LFR\\0.70.CLU",		"LFR\\0.75.CLU",\
-							"LFR\\0.80.CLU"};
+	char *LFRDataLabel[] ={ "E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.00.CLU", 	"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.05.CLU",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.10.CLU",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.15.CLU",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.20.CLU",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.25.CLU",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.30.CLU",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.35.CLU",
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.40.CLU",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.45.CLU",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.50.CLU",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.55.CLU",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.60.CLU",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.65.CLU",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.70.CLU",		"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.75.CLU",\
+							"E:\\毕设材料\\MODPSO_TEC2014\\数据集\\LFR\\0.80.CLU"};
 
 
 /*------------------------------------------------------------------*/
@@ -151,7 +133,7 @@ void main()
 /*==========================================================================================*/
 /*==================testing for unsigned real world networks================================*/
 /**/
-	int RealIndex = 8; //8--SFI, 10--netremove, 12--powerremove, 3-karate,4-dolphin,5-football
+	int RealIndex = 4; //8--SFI, 10--netremove, 12--powerremove, 3-karate,4-dolphin,5-football
 	numVariables  = nvars[RealIndex];
 	optimization = 0;
 	SignedFlag = 0;  // unsigned network
