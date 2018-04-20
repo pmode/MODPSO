@@ -433,7 +433,7 @@ void TMOEAD::run(int sd, int nc, int mg, int rn)
 	}
 
 	char savefilename0[1024];
-	sprintf(savefilename0,"ParetoFront/DMOEA_%s_PF%d.txt",strReal,rn);
+	sprintf(savefilename0,"ParetoFront/dmoea-old_%s_PF%d.txt",strReal,rn);
 	save_results(savefilename0);
 	char savefilename1[1024];
     sprintf(savefilename1,"ParetoFront/MODPSO_%s_front%d.txt",strReal,rn);
