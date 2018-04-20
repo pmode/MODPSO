@@ -102,6 +102,21 @@ void TMOEAD::store_pbests() /* Store personal bests (both variable and fitness v
 			
 }
 
+int find(vector<int> a){
+	int b[1000] = { 0 };
+	for (int i = 0; i < a.size(); i++){
+		b[a[i]]++;
+	}
+	int re = a[0]; int temp = 0;
+	for (int i = 0; i < a.size(); i++){
+		if (temp<b[i]){
+			re = i;
+			temp = b[i];
+		}
+	}
+	return re;
+}
+
 void TMOEAD::compute_velocity(int index, TIndividual &child, int gen) /* Compute new velocity of each particle in the population */
 {
 	unsigned int top, i, j, k, m, l, gBest;
@@ -115,11 +130,12 @@ void TMOEAD::compute_velocity(int index, TIndividual &child, int gen) /* Compute
 	for(j = 0; j < numVariables; j++)
 	{
 		int v1, v2;
+		int nn = find(node[j].neighbours);
 
 		if (pbest[index].x_var[j] == population[index].indiv.x_var[j]) v1 = 0;
 		else v1 = 1;
 
-		if (NeighborBest.x_var[j] == population[index].indiv.x_var[j]) v2 = 0;
+		if (population[index].indiv.x_var[nn] == population[index].indiv.x_var[j]) v2 = 0;/*Gbest是当前粒子其所有邻居频率出现做多的状态*/
 		else v2 = 1;
 
 // 		velocity[i][j] = 0.4 * velocity[i][j] + 1.0 * rnd_uni(&rnd_uni_init) * 
@@ -271,7 +287,7 @@ void TMOEAD::compute_velocity(int index, TIndividual &child, int gen) /* Compute
 
 void TMOEAD::update_pbests(int index) /* Update personal bests of particles in the population */
 {
-	unsigned int j, sum, better, counter;
+	unsigned int j, sum, better=0, counter;
 	
 	sum = 0; counter = 0;
 
@@ -431,13 +447,13 @@ void TMOEAD::run(int sd, int nc, int mg, int rn)
 	//	cout<<"the "<<gen<<"th iteration finished"<<endl;
 		evolution(gen); 
 	}
-
+/*
 	char savefilename0[1024];
 	sprintf(savefilename0,"ParetoFront/DMOEA_%s_PF%d.txt",strReal,rn);
 	save_results(savefilename0);
 	char savefilename1[1024];
     sprintf(savefilename1,"ParetoFront/MODPSO_%s_front%d.txt",strReal,rn);
-	save_front(savefilename1);
+	save_front(savefilename1);*/
 	char savefilename2[1024];
     sprintf(savefilename2,"variable/MODPSO_%s_R%d.txt",strReal,rn);
 	save_chrom(savefilename2);
