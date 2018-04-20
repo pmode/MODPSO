@@ -1,0 +1,73 @@
+﻿生成启动时间为 2018/4/20 15:19:39。
+     1>项目“E:\毕设材料\MODPSO_TEC2014\原算法\old\old\old.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\公共代码\MODPSO_main - old.cpp"
+         MODPSO_main - old.cpp
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(18): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(27): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(35): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(43): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(217): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(219): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(222): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(223): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(226): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(228): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(230): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(232): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(244): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(246): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(252): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(254): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(262): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(265): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(275): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(317): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(319): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(359): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(360): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(331): warning C4101: “m”: 未引用的局部变量
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(393): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(398): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(402): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(448): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(451): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(464): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(473): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(477): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(495): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(521): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(537): warning C4101: “temp”: 未引用的局部变量
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(626): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(634): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\objective.h(42): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\objective.h(47): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\objective.h(52): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\objective.h(78): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\objective.h(85): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\objective.h(91): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(100): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(97): warning C4101: “j”: 未引用的局部变量
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(115): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(146): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(194): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(107): warning C4101: “i”: 未引用的局部变量
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(107): warning C4101: “gBest”: 未引用的局部变量
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(107): warning C4101: “top”: 未引用的局部变量
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(227): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(261): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(263): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(276): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(349): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(411): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(429): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\dmoea-old.h(490): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\毕设材料\modpso_tec2014\公共代码\common.h(487): warning C4715: “calcQ”: 不是所有的控件路径都返回值
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\毕设材料\MODPSO_TEC2014\原算法\old\Debug\old.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\毕设材料\MODPSO_TEC2014\原算法\old\Debug\old.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\毕设材料\MODPSO_TEC2014\原算法\old\Debug\old.lib" /MACHINE:X86 "Debug\MODPSO_main - old.obj"
+         old.vcxproj -> E:\毕设材料\MODPSO_TEC2014\原算法\old\Debug\old.exe
+     1>已完成生成项目“E:\毕设材料\MODPSO_TEC2014\原算法\old\old\old.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.61
