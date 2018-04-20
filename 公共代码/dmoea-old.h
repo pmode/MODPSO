@@ -108,9 +108,9 @@ void TMOEAD::compute_velocity(int index, TIndividual &child, int gen) /* Compute
 
 	child = population[index].indiv;
 
-	int RandNum = rnd_uni(&rnd_uni_init) * population[index].table.size();
-	int RandNeighbor = population[index].table[RandNum];
-	TIndividual NeighborBest = population[RandNeighbor].indiv;	//*/
+//	int RandNum = rnd_uni(&rnd_uni_init) * population[index].table.size();
+//	int RandNeighbor = population[index].table[RandNum];
+	TIndividual NeighborBest = population[rand()%100].indiv;	//*/
 	
 	for(j = 0; j < numVariables; j++)
 	{
@@ -121,12 +121,6 @@ void TMOEAD::compute_velocity(int index, TIndividual &child, int gen) /* Compute
 
 		if (NeighborBest.x_var[j] == population[index].indiv.x_var[j]) v2 = 0;
 		else v2 = 1;
-
-// 		velocity[i][j] = 0.4 * velocity[i][j] + 1.0 * rnd_uni(&rnd_uni_init) * 
-//  		v1 + 1.0 * rnd_uni(&rnd_uni_init) * v2;
-
-// 		velocity[i][j] = 0.4 * velocity[i][j] + 0.5 * rnd_uni(&rnd_uni_init) * 
-//  		v1 + 0.5 * rnd_uni(&rnd_uni_init) * v2;
 
 		velocity[index][j] = rnd_uni(&rnd_uni_init) * velocity[index][j] + 
 							1.494 * rnd_uni(&rnd_uni_init) * v1 + 
@@ -145,51 +139,6 @@ void TMOEAD::compute_velocity(int index, TIndividual &child, int gen) /* Compute
  		else velocity[index][j] = 0;
 
 	}
-
-  /* Calculate new positions of particles */
-//       popVar[i][j] = popVar[i][j] + velocity[i][j];	
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-// select the label indentifier of a node which has largest degree
-//   for(i = 0; i < popsize; i++){
-//     for(j = 0; j < numVariables; j++){
-// 		if (velocity[i][j] == 1){
-// 			int neighborsize = node[j].neighbours.size();
-// 			
-// 			if(neighborsize > 1){
-// 				vector<int> neighbor_degree;		//存储i节点邻居
-// 				for (int nei = 0; nei < neighborsize; nei++){
-// 					int neighbornode = node[j].neighbours[nei];
-// 					neighbor_degree.push_back(node[neighbornode].degree);
-// 				}
-// 
-// 				int max_degree = *max_element(neighbor_degree.begin(),neighbor_degree.end());
-// 				int nodeindex;
-// 				
-// 				for (int tempindex = 0; tempindex < neighborsize; tempindex++){
-// 					if (max_degree == neighbor_degree[tempindex]){
-// 						nodeindex = tempindex;
-// 						break;
-// 					}
-// 				}
-// 				
-// 				popVar[i][j] = popVar[i][node[j].neighbours[nodeindex]];
-// 				
-// 			}//end if neighbor.size > 1
-// 			else {
-// 				if (neighborsize == 1){
-// 					popVar[i][node[j].neighbours[0]] = popVar[i][j];
-// 				} 
-// 				else{
-// 					//	cout<<"第"<<i+1<<"个节点无连接"<<endl;
-// 					//	pos[i] = 0;
-// 				}
-// 				
-// 			}
-// 		}//end if
-// 	}//end i
-//   }//end j
-///////////////////////////////////////////////////////////////////////////////////////////////
 
 /*********************************************************************************************/
 // select the dominated label indentifier 

@@ -1,37 +1,3 @@
-
-/*==================================================================================================*/
-// Please find details of the method from:
-//
-//	 Maoguo Gong, Qing Cai, Xiaowei Chen, and Lijia Ma, "Complex Network Clustering by Multiobjective
-//             Discrete Particle Swarm Optimization Based on Decomposition", IEEE Trans. Evolutionary 
-//             Computation, 2013 (accepted).
-/*==================================================================================================*/
-// The source codes are free for research work. If you have any problem with the source codes, please 
-// contact with:
-
-//	Maoguo Gong, 
-//		Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education,
-//		University of Xidian,
-//		Xi¡¯an, Shaanxi Province 710071, China.
-//		http://web.xidian.edu.cn/mggong/index.html
-//		Email: gong@ieee.org or mggong@mail.xidian.edu.cn
-
-//    Qing Cai
-//		Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education,
-//		University of Xidian,
-//		Xi¡¯an, Shaanxi Province 710071, China.
-//		Email: 2008_jammy@163.com
-/*==================================================================================================*/
-// Programmer:		
-//		Qing Cai
-// Last Update:
-//		Nov. 11, 2012
-/*==================================================================================================*/
-// The package is passed compiling under: MS Visual C++ in Windows XP. 
-// After running the program, please find the final results in the corresponding document archives.
-// All the network topology structures shown in the paper are drawn with the software Pajek.
-/*==================================================================================================*/
-
 #include "global.h"
 #include "dmoea-old.h"
 	
@@ -118,21 +84,6 @@ void main()
 							 "yeast.txt",      "ecoli.txt",\
 							 "wiki.txt"};
 
-/*--------------------------real labels of the signed networks------------------------------*/  
-	char *SignedDataLabel[] ={"RealWorld\\sloeven1label.txt", "RealWorld\\gahuku2label.txt",\
-							  "RealWorld\\datalabel.txt", 	  "RealWorld\\datalabel.txt",\
-							  "RealWorld\\datalabel.txt",     "RealWorld\\datalabel.txt",\
-							  "RealWorld\\datalabel.txt",     "RealWorld\\datalabel.txt",\
-							  "RealWorld\\new1000-6label.txt",\
-							  "RealWorld\\datalabel.txt",\
-							  "RealWorld\\datalabel.txt",\
-							  "RealWorld\\datalabel.txt",\
-							  "RealWorld\\datalabel.txt",\
-							  "RealWorld\\datalabel.txt"};
-
-/*-----------nodes of the signed networks--------------------*/
-	int nnodes[] = {10, 16, 28, 28, 987, 180, 162, 120, 1000,\
-					329, 678, 690, 1461, 7114};
 
 /*----------------------------------the LFR benchmark networks------------------------------*/
 	char *LFRData[] = { "LFR\\0.00.txt", "LFR\\0.05.txt",\
@@ -199,7 +150,7 @@ void main()
 
 /*==========================================================================================*/
 /*==================testing for unsigned real world networks================================*/
-/*
+/**/
 	int RealIndex = 8; //8--SFI, 10--netremove, 12--powerremove, 3-karate,4-dolphin,5-football
 	numVariables  = nvars[RealIndex];
 	optimization = 0;
@@ -219,24 +170,6 @@ void main()
 
 
 
-/**************************************************************/
-//*  testing for signed networks
-	int RealIndex = 9; 
-	optimization = 0;
-	numVariables  = nnodes[RealIndex];
-	SignedFlag = 1;  // signed network 
-	mutate_posibility = 0.9;
-	AdjacentMatrix = new int *[numVariables];
-	for ( int i = 0;i < numVariables;i++ )
-	{
-		AdjacentMatrix[i] = new int [numVariables];
-	}
-	node = new network[numVariables];
-	strcpy(strReal,SignedData[RealIndex]);
-	ReadFile(strReal,AdjacentMatrix,numVariables,numVariables);  
-
-	strcpy(strlabel,SignedDataLabel[RealIndex]);
-/**************************************************************/
 
 
 //////////////////////////////////////////////////////////////////////
