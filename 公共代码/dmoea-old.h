@@ -431,13 +431,13 @@ void TMOEAD::run(int sd, int nc, int mg, int rn)
 	//	cout<<"the "<<gen<<"th iteration finished"<<endl;
 		evolution(gen); 
 	}
-
+	/*
 	char savefilename0[1024];
-	sprintf(savefilename0,"ParetoFront/dmoea-old_%s_PF%d.txt",strReal,rn);
+	sprintf(savefilename0,"ParetoFront/dmoea_%s_PF%d.txt",strReal,rn);
 	save_results(savefilename0);
 	char savefilename1[1024];
     sprintf(savefilename1,"ParetoFront/MODPSO_%s_front%d.txt",strReal,rn);
-	save_front(savefilename1);
+	save_front(savefilename1);*/
 	char savefilename2[1024];
     sprintf(savefilename2,"variable/MODPSO_%s_R%d.txt",strReal,rn);
 	save_chrom(savefilename2);
